@@ -36,3 +36,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=0 \
     ro.hardware.keystore=sdm660
 
+# Blacklist Properties
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
+    ro.build.date \
+    ro.build.date.utc
