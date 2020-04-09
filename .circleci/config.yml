@@ -1,4 +1,4 @@
-version: 2 
+version: 2.1
 jobs:
   build:
     docker:
@@ -6,8 +6,8 @@ jobs:
       - image: fr3akyphantom/droid-builder:latest
     environment:
       MANIFEST_BRANCH: 'android-9.0'
-      # PBRP_BRANCH: 'android-9.0'
-      VERSION: '2.9.0'
+      PBRP_BRANCH: 'devs'
+      VERSION: '2.9.1'
       VENDOR: 'xiaomi'
       CODENAME: 'lavender'
       BUILD_LUNCH: 'omni_lavender-eng'
