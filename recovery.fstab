@@ -20,7 +20,7 @@
 /persist_image  emmc    /dev/block/bootdevice/by-name/persist                 flags=display="Persist Image";backup=1;flashimg=1
 /splash         emmc    /dev/block/bootdevice/by-name/splash                  flags=display="Boot Logo";backup=1;flashimg=1
 /dtbo           emmc     /dev/block/bootdevice/by-name/dtbo                   flags=display="DTBO";backup=1;flashimg=1
-/vbmeta_image   emmc     /dev/block/bootdevice/by-name/vbmeta                 flags=display="Vbmeta";flashimg=1
+/vbmeta_image   emmc     /dev/block/bootdevice/by-name/vbmeta                 flags=display="Vbmeta";backup=1;flashimg=1
 
 /modem          emmc    /dev/block/bootdevice/by-name/modem                   flags=backup=1;display="Modem"
 /bluetooth      emmc    /dev/block/bootdevice/by-name/bluetooth               flags=backup=1;subpartitionof=/modem
