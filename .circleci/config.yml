@@ -12,9 +12,9 @@ jobs:
       CODENAME: 'lavender'
       BUILD_LUNCH: 'omni_lavender-eng'
       # Remove the following when Publishing Official
-      TEST_BUILD: 'true'
+      # TEST_BUILD: 'true'
       # Only for Official Build, uncomment following
-      # PB_OFFICIAL: 'true'
+      PB_OFFICIAL: 'true'
     working_directory: /home/builder/pitchblack
     steps:
       - checkout
