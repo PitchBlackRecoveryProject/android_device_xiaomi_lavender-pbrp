@@ -6,15 +6,15 @@ jobs:
       - image: fr3akyphantom/droid-builder:latest
     environment:
       MANIFEST_BRANCH: 'android-9.0'
-      PBRP_BRANCH: 'devs'
+      PBRP_BRANCH: 'xy'
       VERSION: '2.9.1'
       VENDOR: 'xiaomi'
       CODENAME: 'lavender'
       BUILD_LUNCH: 'omni_lavender-eng'
       # Remove the following when Publishing Official
-      # TEST_BUILD: 'true'
+      TEST_BUILD: 'true'
       # Only for Official Build, uncomment following
-      PB_OFFICIAL: 'true'
+      # PB_OFFICIAL: 'true'
     working_directory: /home/builder/pitchblack
     steps:
       - checkout
