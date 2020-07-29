@@ -6,15 +6,21 @@ jobs:
       - image: fr3akyphantom/droid-builder:latest
     environment:
       MANIFEST_BRANCH: 'android-9.0'
-      PBRP_BRANCH: 'xy'
       VERSION: '3.0.0'
       VENDOR: 'xiaomi'
       CODENAME: 'lavender'
+      MAINTAINER: 'PBRPTeam'
       BUILD_LUNCH: 'omni_lavender-eng'
       # Remove the following when Publishing Official
-      TEST_BUILD: 'true'
       # Only for Official Build, uncomment following
-      # PB_OFFICIAL: 'true'
+      PB_OFFICIAL: 'true'
+      CHANGELOG: " - Bringup 3.0\n
+          - Source side changes\n
+          - Fully Redesigned UI\n
+	  - New Android like Power Menu (Activated via power key hold)\n
+	  - Flashlight toggled by Vol up(+) on hold\n
+	  - Flashlight toggle on Lockscreen\n
+          - Etc."
     working_directory: /home/builder/pitchblack
     steps:
       - checkout
