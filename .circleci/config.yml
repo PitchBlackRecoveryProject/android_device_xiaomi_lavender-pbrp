@@ -13,14 +13,7 @@ jobs:
       BUILD_LUNCH: 'omni_lavender-eng'
       # Remove the following when Publishing Official
       # Only for Official Build, uncomment following
-      PB_OFFICIAL: 'true'
-      CHANGELOG: " - Bringup 3.0\n
-          - Source side changes\n
-          - Fully Redesigned UI\n
-	  - New Android like Power Menu (Activated via power key hold)\n
-	  - Flashlight toggled by Vol up(+) on hold\n
-	  - Flashlight toggle on Lockscreen\n
-          - Etc."
+      TEST_BUILD: 'true'
     working_directory: /home/builder/pitchblack
     steps:
       - checkout
@@ -40,5 +33,5 @@ workflows:
       - build:
           filters:
             branches:
-              only: android-9.0
+              only: test
           context: org-global
