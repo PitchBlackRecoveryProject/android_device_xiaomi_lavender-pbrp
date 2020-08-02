@@ -128,5 +128,8 @@ TW_INCLUDE_FUSE_EXFAT := true
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
 
+#PBRP
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
 # Official
 #PB_OFFICIAL := true
