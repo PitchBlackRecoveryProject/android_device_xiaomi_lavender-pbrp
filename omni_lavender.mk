@@ -26,7 +26,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 PRODUCT_DEVICE := lavender
 PRODUCT_NAME := omni_lavender
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Redmi Note 7
+PRODUCT_MODEL := Redmi Note 7
 PRODUCT_MANUFACTURER := Xiaomi
 
 # enable stock zip packages flash
