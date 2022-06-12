@@ -146,6 +146,9 @@ QCOM_BOARD_PLATFORMS += sdm660
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# QTI vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+
 # System as root
 BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
 BOARD_SUPPRESS_SECURE_ERASE := true
