@@ -22,6 +22,7 @@ TW_EXCLUDE_APEX := true
 # Build from source
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.base@1.0 \
+    android.system.keystore2 \
     libdrm \
     libion \
     libxml2 \
