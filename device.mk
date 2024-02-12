@@ -23,7 +23,6 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libxml2 \
     libdisplayconfig.qti \
-    vendor.display.config@1.0 \
     vendor.display.config@2.0
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
