@@ -35,6 +35,15 @@ on fs
 on init
     setprop vendor.gatekeeper.disable_spu true
 
+service unified-script /system/bin/unified-script.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 on boot
+    start unified-script
     setprop sys.usb.config adb
     start health-hal-2-0
+    chmod 0777 /system/bin/unified-script.sh
