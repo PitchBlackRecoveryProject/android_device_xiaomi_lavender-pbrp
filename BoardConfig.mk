@@ -114,6 +114,9 @@ BOARD_SUPER_PARTITION_GROUPS := r5x_dynpart
 BOARD_R5X_DYNPART_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_SIZE) - 4194304 )
 BOARD_R5X_DYNPART_PARTITION_LIST := odm product system system_ext vendor
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Init
 #TARGET_INIT_VENDOR_LIB := libinit_r5x
 #TARGET_RECOVERY_DEVICE_MODULES := libinit_r5x
