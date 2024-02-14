@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/realme/r5x
 
+# Apex
+TW_EXCLUDE_APEX := true
+
 # Build from source
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.base@1.0 \
