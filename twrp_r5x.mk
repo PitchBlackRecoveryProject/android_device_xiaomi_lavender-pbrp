@@ -33,9 +33,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := r5x
 PRODUCT_NAME := twrp_r5x
-PRODUCT_BRAND := Realme
+PRODUCT_BRAND := realme
 PRODUCT_MODEL := 5/5s/5i/5NFC
-PRODUCT_MANUFACTURER := Realme
+PRODUCT_MANUFACTURER := realme
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \
