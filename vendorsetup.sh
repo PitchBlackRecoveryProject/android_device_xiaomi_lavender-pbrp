@@ -64,7 +64,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export TARGET_DEVICE_ALT=RMX1925
         export TARGET_DEVICE_ALT=RMX1927
 	export OF_SUPPORT_OZIP_DECRYPTION=1
-        export OF_DEFAULT_KEYMASTER_VERSION=4.0
+        export OF_DEFAULT_KEYMASTER_VERSION=4.1
 	export FOX_USE_NANO_EDITOR=1
     	# dispense with the entire OTA menu
         export OF_DISABLE_OTA_MENU=1
