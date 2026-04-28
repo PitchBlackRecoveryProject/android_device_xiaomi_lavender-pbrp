@@ -1,14 +1,21 @@
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-sys.usb.controller=a600000.dwc3
+# Misc
+ro.product.brand=xiaomi
+ro.product.name=lavender
+ro.product.device=lavender
+ro.product.mod_device=lavender_global
+ro.build.product=lavender
+sys.usb.controller=a800000.dwc3
 sys.usb.rndis.func.name=rndis_bam
 sys.usb.rmnet.func.name=rmnet_bam
-persist.sys.isUsbOtgEnabled=true
+ro.product.board=sdm660
+ro.board.platform=sdm660
 vendor.gatekeeper.disable_spu=true
 ro.boot.avb_version=1.0
 ro.boot.vbmeta.avb_version=1.0
-keymaster_ver=4.1
+keymaster_ver=4.0
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.filenames_mode=aes-256-cts

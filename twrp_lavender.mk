@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := r5x
+PRODUCT_RELEASE_NAME := lavender
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -24,18 +24,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Inherit from r5x device
-$(call inherit-product, device/realme/r5x/device.mk)
+# Inherit from lavender device
+$(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := r5x
-PRODUCT_NAME := twrp_r5x
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := 5/5s/5i/5NFC
-PRODUCT_MANUFACTURER := realme
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := lavender
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := twrp_lavender
+PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \

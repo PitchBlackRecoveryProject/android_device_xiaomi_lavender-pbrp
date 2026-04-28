@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/realme/r5x
+LOCAL_PATH := device/xiaomi/lavender
 
 # Apex
 TW_EXCLUDE_APEX := true
@@ -57,6 +57,3 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 28
-
-# Add TW_DEVICE_VERSION
-TW_DEVICE_VERSION := by AmritoRock
