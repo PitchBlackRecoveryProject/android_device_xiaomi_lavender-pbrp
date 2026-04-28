@@ -1,14 +1,9 @@
-# Android fstab file.
-# The filesystem that contains the filesystem checker binary (typically /system) cannot
-# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+system                                                              /system                ext4    ro,barrier=1                                                                                        wait,logical,first_stage_mount,readahead_size_kb=128
+system_ext                                                          /system_ext            ext4    ro,barrier=1                                                                                        wait,logical,first_stage_mount,readahead_size_kb=128
+vendor                                                              /vendor                ext4    ro,barrier=1                                                                                        wait,logical,first_stage_mount,readahead_size_kb=128
+product                                                             /product               ext4    ro,barrier=1                                                                                        wait,logical,first_stage_mount,readahead_size_kb=128
+odm                                                                 /odm                   ext4    ro,barrier=1                                                                                        wait,logical,first_stage_mount,readahead_size_kb=128
 
-#<src>                                 <mnt_point>   <type>  <mnt_flags and options>            <fs_mgr_flags>
-/dev/block/bootdevice/by-name/userdata                  /data                    f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt             latemount,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,metadata_encryption=aes-256-xts,keydirectory=/metadata/vold/metadata_encryption,readahead_size_kb=128,checkpoint=fs
-/dev/block/by-name/metadata                             /metadata                ext4    noatime,nosuid,nodev,discard                         wait,formattable,first_stage_mount
-/dev/block/bootdevice/by-name/misc       /misc        emmc    defaults                            defaults
-
-system						/system			ext4	rw								wait,logical,first_stage_mount
-system_ext					/system_ext		ext4	rw								wait,logical,first_stage_mount
-product						/product		ext4	rw								wait,logical,first_stage_mount
-vendor						/vendor			ext4	rw								wait,logical,first_stage_mount
-odm						/odm			ext4	rw								wait,logical,first_stage_mount
+/dev/block/by-name/logdump                                          /metadata              ext4    noatime,nosuid,nodev,discard,data=journal,commit=1                                                wait,check,formattable,first_stage_mount
+/dev/block/bootdevice/by-name/userdata                              /data                  f2fs    nodev,nosuid,fsync_mode=nobarrier,lazytime,inlinecrypt,background_gc=off                          latemount,wait,check,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,checkpoint=fs,quota,formattable,reservedsize=128M,fsverity,readahead_size_kb=128
+/dev/block/bootdevice/by-name/misc                                  /misc                  emmc    defaults                                                                                          defaults
