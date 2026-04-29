@@ -34,7 +34,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := twrp_lavender
+PRODUCT_NAME := pb_lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \

@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_lavender.mk
+    $(LOCAL_DIR)/pb_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_lavender-eng
+    pb_lavender-eng
